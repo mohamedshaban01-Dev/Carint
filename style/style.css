@@ -131,7 +131,7 @@ nav ul li.search .search-icon {
 main section#home {
     width: 100%;
     height: fit-content;
-    background-image: url('/image/slider-bg.jpg');
+    background-image: url('image/slider-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -257,7 +257,7 @@ main section#services a {
 /* ---------------------------------------- */
 /* start about us  */
 main section#About-Us {
-    background-image: url("/image/track-bg.jpg");
+    background-image: url("image/track-bg.jpg");
     height: 80vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -310,6 +310,7 @@ main section#About-Us div.container div.img-general img {
     top: 5vh;
 } */
 }
+
 /* end about us  */
 /* --------------------------------- */
 /* start shipment */
@@ -373,14 +374,16 @@ main section#shipment div.container input#submit:hover {
 /* ---------------------------------------------- */
 
 /* start footer  */
-.info_section div.container div.row{
+.info_section div.container div.row {
     display: grid;
     gap: 50px;
 }
-.info_detail{
-   
+
+.info_detail {
+
     width: 60%;
 }
+
 .info_section {
     background-color: #04233b;
     color: #ffffff;
@@ -576,30 +579,30 @@ section.info_section div.container {
         align-items: center;
 
     }
-    
 
 
-        header nav ul.hidden {
-            display: flex;
-            flex-flow: row ;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            list-style: none;
-            gap: 2vw;
-            margin-top: 0%;
-            padding: 10px;
-            font-size: small;
-            width: 90%;
-            transition: 600ms;
-        }
-     
+
+    header nav ul.hidden {
+        display: flex;
+        flex-flow: row;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        gap: 2vw;
+        margin-top: 0%;
+        padding: 10px;
+        font-size: small;
+        width: 90%;
+        transition: 600ms;
+    }
+
 
     a.logo {
         display: flex;
-         align-self: center;
+        align-self: center;
         width: 3vw;
-      
+
     }
 
     .menu-icon {
@@ -625,7 +628,7 @@ section.info_section div.container {
 
     main section#home {
 
-        background-image: url('/image/slider-bg.jpg');
+        background-image: url('image/slider-bg.jpg');
 
 
     }
@@ -638,7 +641,7 @@ section.info_section div.container {
     main section#home {
         width: 100%;
         height: fit-content;
-        background-image: url('/image/slider-bg.jpg');
+        background-image: url('image/slider-bg.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -719,14 +722,15 @@ section.info_section div.container {
         width: 50%;
         gap: 2vh;
     }
-        .info_section div.container div.row {
-            display: flex;
-            gap: 50px;
-        }
-    
-        .info_detail {
-            align-self: center;
-            justify-self: center;
-            width: 60%;
-        }
+
+    .info_section div.container div.row {
+        display: flex;
+        gap: 50px;
+    }
+
+    .info_detail {
+        align-self: center;
+        justify-self: center;
+        width: 60%;
+    }
 }
