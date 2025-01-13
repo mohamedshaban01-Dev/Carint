@@ -131,7 +131,7 @@ nav ul li.search .search-icon {
 main section#home {
     width: 100%;
     height: fit-content;
-    background-image: url('image/slider-bg.jpg');
+    background-image: url('../image/slider-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -257,7 +257,7 @@ main section#services a {
 /* ---------------------------------------- */
 /* start about us  */
 main section#About-Us {
-    background-image: url("image/track-bg.jpg");
+    background-image: url("../image/track-bg.jpg");
     height: 80vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -628,7 +628,7 @@ section.info_section div.container {
 
     main section#home {
 
-        background-image: url('image/slider-bg.jpg');
+        background-image: url('../image/slider-bg.jpg');
 
 
     }
@@ -641,7 +641,7 @@ section.info_section div.container {
     main section#home {
         width: 100%;
         height: fit-content;
-        background-image: url('image/slider-bg.jpg');
+        background-image: url('../image/slider-bg.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
