@@ -7,8 +7,12 @@
 
 body main {
     overflow-x: hidden;
-    color: #ffffffb1;
-    background-color: rgba(0, 0, 0, 0.889);
+    color: #00616b;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 7vh;
+    height: auto;
 }
 
 
@@ -205,37 +209,39 @@ main section#services div.container text {
 }
 
 main section#services div.container .content {
-    height: 43vh;
-    width: 90vw;
+    height: 33vh;
+    width: 100%;
     display: flex;
-    gap: 5vw;
+    gap: 5%;
     flex-flow: row;
     /* background-color: #ffffff09; */
     padding: 10px;
     align-items: center;
     justify-content: center;
+    background-color: #00abbe30;
+    border-bottom: solid 2px white;
 
 }
 
 main section#services div.container div.div4 div.text {
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 main section#services div.container div.content img {
-    width: 80px;
+    width: 60px;
     align-self: flex-start;
 
 }
 
 main section#services div.container div.content img.Train {
-    width: 50px;
+    width: 40px;
 
 }
 
 main section#services div.content div.text {
     display: flex;
     flex-flow: column;
-    gap: 2vh;
+    gap: 0.5vh;
 
 }
 
@@ -250,7 +256,7 @@ main section#services div.head span {
 }
 
 main section#services a {
-    color: #ffffffb1;
+    color: #005e69;
 }
 
 /* end service  */
@@ -258,15 +264,29 @@ main section#services a {
 /* start about us  */
 main section#About-Us {
     background-image: url("../image/track-bg.jpg");
-    height: 80vh;
+    height: auto;
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 0;
     border-radius: 0px 2px 2px 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2vh;
+    justify-content: center;
 
 }
 
+main section#About-Us div.container div.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2vh;
+    align-self: center;
+
+}
+
+
 main section#About-Us div.container {
+    color: #fff;
     padding-top: 20px;
     padding-bottom: 20px;
     height: 100%;
@@ -276,13 +296,14 @@ main section#About-Us div.container {
     gap: 2vh;
     align-items: center;
     text-align: start;
-    background-color: #040404b2;
+
+
 }
 
 main section#About-Us div.container button {
     background-color: #008c9b;
     border: none;
-    padding: 1vh 2vh;
+    padding: 1vh 1vh;
     color: rgba(255, 255, 255, 0.723);
     align-self: flex-start;
 }
@@ -292,82 +313,72 @@ main section#About-Us div.container button:hover {
     transition: 300ms;
 }
 
-main section#About-Us div.container div.img-general {
-    background-color: #008c9b;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    width: 100vh;
-    justify-content: center;
-    position: relative;
 
-}
-
-main section#About-Us div.container div.img-general img {
-    width: 250px;
-    /* position: absolute;
-    left: 7vw;
-    top: 5vh;
-} */
-}
 
 /* end about us  */
 /* --------------------------------- */
 /* start shipment */
 main section#shipment {
-    height: 100vh;
-    /* background-color: #0000006b; */
+    height: auto;
+    /* background-color: blueviolet; */
+    color: #00616b;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-
-}
-
-main section#shipment div.container div.content div.input #num-track {
-
-    width: 40vh;
-}
-
-main section#shipment div.container div.content div.input #submit {
-    width: 20vw;
 }
 
 main section#shipment div.container {
-    height: 90vh;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    padding-top: 10px;
-    padding-bottom: 10px;
     font-size: small;
+    height: 100%;
+    width: 100%;
+    color: #00616b;
 
 
 }
 
-main section#shipment div.container input {
+main section#shipment div.container div.content {
+    display: flex;
+    height: 100%;
+    flex-flow: column;
+    justify-content: center;
+    align-self: center;
+    gap: 2vh;
+}
+
+div.input {
+    display: flex;
+}
+
+main section#shipment div.container div.content div.input #num-track {
     padding: 10px;
+    width: 35vh;
+    height: 4vh;
+}
+
+
+
+
+
+main section#shipment div.container input {
+    padding: 5px;
     border: none;
-    width: 40vw;
+    border: solid 1.5px #065968;
 }
 
 main section#shipment div.container input#submit {
     background-color: #008c9b;
-    width: 10vw;
+    width: 20vw;
     border: none;
+    height: 7vh;
 }
 
 main section#shipment div.container input#submit:hover {
     background-color: #00616b;
     transition: 300ms;
 }
-
-
-/* ------------------------------------------- */
-
-
 
 /* end shipment */
 
@@ -381,7 +392,7 @@ main section#shipment div.container input#submit:hover {
 
 .info_detail {
 
-    width: 60%;
+    width: 90%;
 }
 
 .info_section {
@@ -545,19 +556,228 @@ section.info_section div.container {
 
 /* end footer  */
 /* media query area */
-@media (max-width:599px) {
-    main section#shipment {
-        margin-top: 70px;
+@media (width:320px) {
+    #services {
+        height: auto;
+    }
+
+    #services div.container div.content-All {
+        height: auto;
+        width: 100%;
+    }
+
+    #services div.container div.content {
+        height: 100vh;
+    }
+
+    section#About-Us {
+        height: auto;
+    }
+
+    #About-Us div.container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: xx-small;
+    }
+
+    main section#About-Us div.container button {
+        width: 10vw;
+
+    }
+
+    main section#shipment div.container div.content div.input {
+        height: 5vh;
+    }
+
+    main section#shipment div.container div.content div.input #num-track {
+
+        width: 60vw;
+        height: 6vh;
+    }
+
+    main section#shipment div.container div.content div.input #submit {
+        width: 25vw;
+        height: 6vh;
+        font-size: small;
+        color: #fff;
     }
 
 }
 
+@media (max-width:600px) {
+
+    #services {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: auto;
+
+    }
+
+    #services
+
+    /* #services div.container{
+    align-items: center;
+
+   
+    background-color: blueviolet;
+   } */
+    #services div.container div.content-All {
+        overflow: hidden;
+
+        height: 100%;
+        width: 100%;
+        gap: 5%;
+
+    }
+
+    main section#services div.container .content {
+        height: 55vh;
+        width: 100%;
+    }
+
+    section#About-Us {
+        height: auto;
+    }
+
+    #About-Us div.container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: xx-small;
+    }
+
+    main section#About-Us div.container button {
+        width: 20vw;
+
+    }
+
+    main section#shipment div.container div.content div.input {
+        height: 5vh;
+    }
+
+    main section#shipment div.container div.content div.input #num-track {
+
+        width: 60vw;
+        height: 7vh;
+    }
+
+    main section#shipment div.container div.content div.input #submit {
+        width: 25vw;
+        height: 7vh;
+        font-size: small;
+        color: #fff;
+    }
+
+
+}
+
+/* @media (max-width:400px) {
+    #services div.container div.content-All .content{
+        height: 30vh;
+        gap: 5%;
+    }
+    main section#About-Us {
+        height: 60vh;
+    }
+    main section#About-Us div.container {
+            color: #fff;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            height: 100%;
+            font-size: smaller;
+            display: flex;
+            flex-flow: column;
+            gap: 2vh;
+            align-items: center;
+            background-color: #00000096;
+            font-size: smaller;
+        }
+        main section#About-Us div.container div.content button {
+            font-size: x-small;
+             width: 25vw;
+            padding: 5px;
+        }
+    main section#shipment {
+        height: 80vh;
+        width: 100vw;
+        font-size: x-small;
+ 
+    
+    }
+    main section#shipment div.container{
+        height: 100%;
+        width: 100%;
+    }
+    main section#shipment div.container div.content{
+        color: #00616b;
+        width: 100%;
+         height: 100%;
+        padding: 5px;
+ 
+    }
+    main section#shipment div.container div.content input#num-track{
+        width: 100px;
+        border: solid 1.5px #065968 ;
+    }
+    div.input{
+        display: flex;
+        
+    }
+        main section#shipment div.container div.content div.input #num-track {
+            padding: 10px;
+            width: 35vh;
+            height: 7vh;
+        }
+    
+        main section#shipment div.container div.content div.input #submit {
+            width: 20vw;
+            height: 7vh;
+            padding: 2px;
+        }
+ 
+} */
 @media (min-width:600px) {
 
     main section#services div.container div.contents-All {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 3vh;
+        gap: 2vh;
+    }
+
+    main section#services div.container div.contents-All .content {
+        height: 30vh;
+
+    }
+
+    main section#About-Us {
+        height: auto;
+    }
+
+    main section#About-Us div.container button {
+        width: 20vw;
+    }
+
+    main section#shipment {
+        height: auto;
+    }
+
+    main section#shipment div.container div.content div.input {
+        height: 5vh;
+    }
+
+    main section#shipment div.container div.content div.input #num-track {
+
+        width: 50vw;
+        height: 7vh;
+    }
+
+    main section#shipment div.container div.content div.input #submit {
+        width: 25vw;
+        height: 7vh;
+        font-size: small;
+        color: #fff;
     }
 
 
@@ -627,14 +847,14 @@ section.info_section div.container {
     }
 
     main section#home {
-
+        height: auto;
         background-image: url('../image/slider-bg.jpg');
 
 
     }
 
     main section#home div.container {
-        height: 80vh;
+        height: 100%;
 
     }
 
@@ -662,11 +882,13 @@ section.info_section div.container {
 
     main section#home div.container div.content {
         width: 50%;
+        gap: 15px;
 
     }
 
     main section#home div.container div.content button {
         padding: 2%;
+        width: 15vw;
 
 
     }
@@ -677,9 +899,21 @@ section.info_section div.container {
 
     }
 
-    main section#services div.container div.contents-All {
+    main section#services {
+        height: auto;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    main section#services div.container {
+        height: 80vh;
+    }
+
+    main section#services div.container div.content-All {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 5%;
 
     }
 
@@ -687,8 +921,15 @@ section.info_section div.container {
         width: 40vw;
     }
 
-    main section#services div.container div.contents-All div.content {
-        width: 45vw;
+    main section#services div.container div.content-All div.content {
+        width: 40vw;
+        height: 20vh;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    main section#About-Us {
+        height: auto;
     }
 
     main section#About-Us div.container {
@@ -698,27 +939,39 @@ section.info_section div.container {
         flex-flow: column;
         align-items: center;
         justify-content: center;
+        background-color: #04233b64;
     }
 
     main section#About-Us div.container div.content {
         display: flex;
         flex-flow: column wrap;
-        width: 50%;
+        width: 60%;
         gap: 2vh;
+
+    }
+
+    main section#About-Us div.container button {
+        width: 10vw;
+    }
+
+    main section#shipment {
+        height: auto;
+        width: auto;
+        align-items: center;
     }
 
     main section#shipment div.container {
         width: 100%;
-        height: 40vh;
+        height: 30vh;
         display: flex;
         flex-flow: column;
         align-items: center;
-        justify-content: center;
+
     }
 
     main section#shipment div.container div.content {
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: column;
         width: 50%;
         gap: 2vh;
     }
